@@ -41,3 +41,12 @@ The color histogram for background is different from that of template.
 
 ![alt text](image/colorhist2.png)
 
+## **Circular Variance**
+
+#### **beetles have striped pattern**
+
+To facilitate comparison, two image patches are drawn. Image on the left corresponds to beetle. We can see clear 
+striped pattern. Image on the right is background. We can see that although they share similar color histogram, 
+their patterns are very different from each other.
+
+![alt text](image/example.png)
