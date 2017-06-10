@@ -36,4 +36,5 @@ feedback to the system automatically assigned topics for each individual article
 * generate D3.js force-directed graph to visualize the topic prediction to users
 * user can make change to the predicted research topics if necessary
 
+![alt text](image/cirvariance.png)
 
