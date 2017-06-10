@@ -81,4 +81,4 @@ The correlation map is thresholded to identify the possible beetle. The identifi
 
 The original test image is also shown to facilitate comparison.
 
-![alt text](image/image2.jpg)
+![alt text](image/Image2.jpg)
