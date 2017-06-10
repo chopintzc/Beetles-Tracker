@@ -4,13 +4,14 @@
 
 This is the Project for AI coding challenge, written in Python and OpenCV.
 It can integrates several algorithms to identify beetles in the image datasets. 
-Two kinds of unsupervised machine learning methods (KMean and LDA) were used to perform clustering analysis
-on the email dataset. All the emails are preprocessed (strip header, attachment, and quote) before clustering
-analysis are performed. Each email is assigned to a cluster/topic. We can use the generated topic keywords to
-summarize the content of communication embeded in the same cluster of emails
-We also extract the sender and receiver information from each email. Thus for each user account, we can summarize
-who is the given account communicating with and what are the prevalent email topics for the given account
-
+A sliding window method is used to calculate the correlation value for each 20 x 20 image patch in the test image.
+The first algorithm is using the color histogram of sample beetles as template and calculating the correlation 
+coefficient of color histogram between sample beetles and test image patch. 
+The second algorithm is calculating the circular variance of orientation tuning curve for each image patch. The
+higher the circular variance is, the more likely it's corresponding to a beetle.
+The correlation value for each image patch is calculated as the multiplication of correlation coefficient and 
+circular variance.
+THe correlation map is thresholded to identify possible beetles.
 
 ## **Requirement**
 
