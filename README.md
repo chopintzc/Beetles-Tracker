@@ -11,7 +11,7 @@ The second algorithm is calculating the circular variance of orientation tuning 
 higher the circular variance is, the more likely it's corresponding to a beetle.
 The correlation value for each image patch is calculated as the multiplication of correlation coefficient and 
 circular variance.
-THe correlation map is thresholded to identify possible beetles.
+The correlation map is thresholded to identify possible beetles.
 
 ## **Requirement**
 
@@ -25,5 +25,19 @@ test image patch and sample beetles
 * calculate the correlation map as the multiplication of correlation coefficient and circular variance
 * calculate the correlation map for each test image and highlight the identified beetles
 
-![alt text](image/cirvariance.png)
+## **Color Histogram**
+
+#### **color histogram of sample beetles**
+
+Five beetles are used as sample to calculate the true color histogram. The template is used to calculate the 
+correlation coefficient for each test image patch.
+
+![alt text](image/colorhist1.png)
+
+#### **color histogram of background**
+
+An example of color histogram for background is plotted to facilitate comparison with the template color histogram.
+The color histogram for background is different from that of template.
+
+![alt text](image/colorhist2.png)
 
