@@ -72,3 +72,13 @@ value is assigned to each test image patch. In the given example correlation map
 brighter region in the center of the image.
 
 ![alt text](image/corrmap.png)
+
+#### **result**
+
+The correlation map is thresholded to identify the possible beetle. The identified beetle is cropped by a red box.
+
+![alt text](image/solution2.jpg)
+
+The original test image is also shown to facilitate comparison.
+
+![alt text](image/image2.jpg)
