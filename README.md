@@ -50,3 +50,15 @@ striped pattern. Image on the right is background. We can see that although they
 their patterns are very different from each other.
 
 ![alt text](image/example.png)
+
+#### **beetles have higher circular variance**
+
+The local gradient is calculated for each image patch. To facilitate comparison, I put them side by side. The images
+on the left correspond to beetle and the images on the right correspond to the background. The upper images correspond
+to the angles of gradient map and lower images correspond to the orientation tuning curve of each each angle map. We
+can see that the striped pattern is reserved for the beetle image, but not for the background image. Reflected on the
+orientation tuning curve, we can see two obvious peaks 180 degrees part from each other for the beetle's gradient
+angle map, but not for the background orientation tuning curve. The circular variance is used to measure the peakness
+of orientation tuning map. 
+
+![alt text](image/cirvariance.png)
