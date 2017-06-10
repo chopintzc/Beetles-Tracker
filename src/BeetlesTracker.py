@@ -15,16 +15,16 @@ import math
 length = 20     # size of sliding window 
 step = 10       # step size of sliding window
 LEN = 36        # 0-360 spatial directions are divided into 36 bins
-
+file = 2        # file name
 
 class Target(object):    
     def __init__(self): 
         # load saved pickle file for beetles color histogram
-        with open('hists.pkl', 'rb') as f:
+        with open('../resource/hists.pkl', 'rb') as f:
             self.hists = pickle.load(f) 
         
         # load the image to process    
-        self.frame = cv2.imread('image1.jpg')      
+        self.frame = cv2.imread('../image/image%d.jpg' % file)      
         
         # calculate the spatial gradient for the whole image
         self.frame = np.float32(self.frame)
@@ -141,7 +141,7 @@ class Target(object):
                     corrmap[y][x] *= self.cal_gradient(y*step, shape[0], x*step, shape[1])
         
         # save correlation map into pickle fie
-        with open('test1.pkl', 'wb') as f:
+        with open('../resource/test%d.pkl' % file, 'wb') as f:
             pickle.dump(corrmap, f)
         
         '''

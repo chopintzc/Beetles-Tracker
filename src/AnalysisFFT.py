@@ -12,8 +12,8 @@ import pickle
 import numpy as np
 
 if __name__ == '__main__':    
-    img1 = cv2.imread('template1.jpg')
-    img2 = cv2.imread('test1.jpg')
+    img1 = cv2.imread('../tmp/beetles2.jpg')
+    img2 = cv2.imread('../tmp/test2.jpg')
     
     img2 = cv2.cvtColor(img2,cv2.COLOR_BGR2GRAY)
     

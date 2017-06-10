@@ -33,8 +33,8 @@ def cal_CV(hist):
     return (max_val-min_val)/(max_val+min_val)
 
 if __name__ == '__main__':    
-    img1 = cv2.imread('template1.jpg')
-    img2 = cv2.imread('test2.jpg')
+    img1 = cv2.imread('../tmp/template1.jpg')
+    img2 = cv2.imread('../tmp/test2.jpg')
     
     img1 = np.float32(img1)
     img2 = np.float32(img2)

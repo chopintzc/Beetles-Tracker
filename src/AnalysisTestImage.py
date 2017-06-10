@@ -24,7 +24,7 @@ if __name__ == '__main__':
     file = 2
     
     # load the correlation map from pickle file
-    with open('test'+str(file)+'.pkl', 'rb') as f:
+    with open('../resource/'+'test'+str(file)+'.pkl', 'rb') as f:
         corrmap = pickle.load(f)
     
     
@@ -34,7 +34,7 @@ if __name__ == '__main__':
     
         
     # load the original image    
-    img = cv2.imread('Image'+str(file)+'.jpg')
+    img = cv2.imread('../image/'+'Image'+str(file)+'.jpg')
     
     # convert correlation map into numpy array
     corrmap = [[x*255 for x in y] for y in corrmap]
@@ -82,6 +82,6 @@ if __name__ == '__main__':
     '''
     
     # write the solution
-    cv2.imwrite('solution'+str(file)+'.jpg', img)
+    cv2.imwrite('../image/'+'solution'+str(file)+'.jpg', img)
     
     

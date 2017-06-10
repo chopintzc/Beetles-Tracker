@@ -17,8 +17,8 @@ def build_hist():
     hists = np.zeros(1000)
         
     for cnt in range(1, 6):
-        imgname = 'Image' + str(cnt) + '.jpg'
-        maskname = 'beetles' + str(cnt) + '.jpg'
+        imgname = '../tmp/Image' + str(cnt) + '.jpg'
+        maskname = '../tmp/beetles' + str(cnt) + '.jpg'
         img = cv2.imread(imgname)
         
         # load the mask for each beetles, I force all the values to be either 0 or 255
@@ -45,7 +45,7 @@ def build_hist():
     '''
       
     # save to pickle file
-    with open('hists.pkl', 'wb') as f:
+    with open('../resource/hists.pkl', 'wb') as f:
         pickle.dump(hists, f)
      
         
