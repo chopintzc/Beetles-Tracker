@@ -62,3 +62,13 @@ angle map, but not for the background orientation tuning curve. The circular var
 of orientation tuning map. 
 
 ![alt text](image/cirvariance.png)
+
+## **Correlation map and Result**
+
+#### **correlation map**
+
+Correlation map is calculated as the multiplication of correlation coefficient and circular variance. A correlation 
+value is assigned to each test image patch. In the given example correlation map, we can clearly see a significantly
+brighter region in the center of the image.
+
+![alt text](image/corrmap.png)
